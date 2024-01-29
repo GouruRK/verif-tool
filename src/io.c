@@ -44,7 +44,8 @@ void print_help(void) {
             " parameter\n"
            "  -l, --length\t\tSpecify maximum line length. Default: 80\n"
            "  -f, --filter\t\tSpecify file type to check. Extensions must"
-            " be separated\n\t\t\t  by a comma.\n"
+            " be separated\n\t\t\t  by a comma. Default extensions are"
+            ".c and .h files\n"
            "  -h, --help\t\tPrint this message and exit\n"
            );
 }

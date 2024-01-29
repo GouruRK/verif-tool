@@ -44,7 +44,7 @@ If PATH is a directory, it will check the files in that directory
   -a, --all             Check all types of files. Overrides the filter parameter
   -l, --length          Specify maximum line length. Default: 80
   -f, --filter          Specify file type to check. Extensions must be separated
-                          by a comma.
+                          by a comma. Default extensions are.c and .h files
   -h, --help            Print this message and exit
 ```
 
