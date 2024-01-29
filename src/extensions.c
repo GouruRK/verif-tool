@@ -68,7 +68,16 @@ static void fill_extensions(const char* src, Extensions* exts) {
     }
 }
 
-Error init_extensions_array(Extensions* exts, int nb_exts, int longest_ext) {
+/**
+ * @brief Init arrays for extensions
+ * 
+ * @param exts contains the arrays
+ * @param nb_exts number of extensions
+ * @param longest_ext longest extension in charater
+ * @return ALLOCATION_ERROR
+ * @return OK
+ */
+static Error init_extensions_array(Extensions* exts, int nb_exts, int longest_ext) {
     exts->extensions = (char**)malloc(sizeof(char*)*nb_exts);
     if (!(exts->extensions)) {
         return ALLOCATION_ERROR;
